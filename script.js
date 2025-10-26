@@ -190,16 +190,6 @@ const sliderRoot = document.querySelector('[data-slider="screens"]');
 let screensSlider = null;
 if (sliderRoot) screensSlider = new Slider(sliderRoot);
 
-// Upload slides -> slider (guarded)
-const uploadBtn = document.getElementById("uploadBtn");
-const slideInput = document.getElementById("slideInput");
-if (uploadBtn && slideInput && screensSlider) {
-  uploadBtn.addEventListener("click", () => slideInput.click());
-  slideInput.addEventListener("change", (e) => {
-    screensSlider.injectSlidesFromFiles(e.target.files);
-  });
-}
-
 // ========== CONTACT FORM VALIDATION (guarded) ==========
 const form = document.getElementById("contactForm");
 const formMsg = document.getElementById("formMsg");
