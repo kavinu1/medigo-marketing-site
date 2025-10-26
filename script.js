@@ -34,16 +34,12 @@ prefersDark.addEventListener("change", (e) => {
 });
 
 // ========== MOBILE NAV ==========
-const nav = document.getElementById("nav");
-const menuBtn = document.querySelector(".menu-btn");
-if (menuBtn && nav) {
-  menuBtn.addEventListener("click", () => nav.classList.toggle("open"));
-  nav
-    .querySelectorAll("a")
-    .forEach((a) =>
-      a.addEventListener("click", () => nav.classList.remove("open"))
-    );
-}
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("nav");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("show");
+});
 
 // ========== SMOOTH SCROLL (same-page anchors only) ==========
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
