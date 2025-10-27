@@ -222,7 +222,7 @@ nav a:focus {
     position: fixed;
     top: 75px;
     left: 0;
-    background: #fdfdfef1;
+    background: var(--bg);
     z-index: 1000;
     width: 100%;
     text-align: center;
