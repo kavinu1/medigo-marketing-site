@@ -34,6 +34,13 @@
           d="M3 6h9v7h7V9l-2.5-3H14V4H3v2Zm14 2h1.5l1.5 2h-3V8ZM3 19h2a2 2 0 1 0 4 0h6a2 2 0 1 0 4 0h2v-4H3v4Zm6-2a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7 7h2v2h2v2H9v2H7v-2H5V9h2V7Z"
         />
       </symbol>
+      <symbol id="i-voice" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 14a3 3 0 0 0 3-3V7a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2Zm-5 7a7.002 7.002 0 0 1-6.93-6H3.07a9 9 0 0 0 17.86 0h-2.01A7.002 7.002 0 0 1 12 18Z"
+        />
+      </symbol>
+
       <symbol id="i-gps" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -334,12 +341,24 @@
           <div class="features">
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-gps" /></svg>
+                <svg width="20" height="20"><use href="#i-voice" /></svg>
               </div>
-              <h3>Tracking capability</h3>
+              <h3>Speech-to-text</h3>
               <p>
-                Live GPS tracking with real‑time ETA and a shareable trip link
-                for family.
+                Users can speak their incident details, instantly converting
+                voice to text for faster, hands-free emergency reporting.
+              </p>
+            </div>
+
+            <div class="feature reveal">
+              <div class="icon">
+                <svg width="20" height="20"><use href="#i-bolt" /></svg>
+              </div>
+              <h3>Introducing InstantSOS</h3>
+              <p>
+                One-tap emergency trigger instantly sends location and incident
+                details, alerts ambulances, and notifies hospitals to save
+                critical seconds.
               </p>
             </div>
 
@@ -356,17 +375,6 @@
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-filter" /></svg>
-              </div>
-              <h3>Filter by proximity, price, availability</h3>
-              <p>
-                Quickly find the best match by distance, cost, and real‑time
-                availability.
-              </p>
-            </div>
-
-            <div class="feature reveal">
-              <div class="icon">
                 <svg width="20" height="20"><use href="#i-ambulance" /></svg>
               </div>
               <h3>Choose the type of service</h3>
@@ -378,12 +386,23 @@
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-bolt" /></svg>
+                <svg width="20" height="20"><use href="#i-filter" /></svg>
               </div>
-              <h3>Incident priority checking</h3>
+              <h3>Filter by proximity, price, availability</h3>
               <p>
-                Built‑in triage to prioritize high‑risk cases and include a
-                doctor when needed.
+                Quickly find the best match by distance, cost, and real‑time
+                availability.
+              </p>
+            </div>
+
+            <div class="feature reveal">
+              <div class="icon">
+                <svg width="20" height="20"><use href="#i-gps" /></svg>
+              </div>
+              <h3>Tracking capability</h3>
+              <p>
+                Live GPS tracking with real‑time ETA and a shareable trip link
+                for family.
               </p>
             </div>
           </div>
@@ -399,8 +418,8 @@
           </div>
 
           <div class="faq">
-            <details class="reveal" open>
-              <summary>Tracking capability</summary>
+            <details class="reveal">
+              <summary>Speech-to-text</summary>
               <ul
                 class="note"
                 style="
@@ -412,12 +431,65 @@
                 "
               >
                 <li>
-                  Patients can track the current location of the ambulance.
+                  Users can speak their incident details instead of typing.
                 </li>
-                <li>The route with the smallest ETA is shown on the map.</li>
+                <li>Converts voice to text instantly for faster reporting.</li>
                 <li>
-                  Helps the patient and family prepare for the ambulance’s
-                  arrival.
+                  Enables hands-free emergency requests when time matters most.
+                </li>
+              </ul>
+            </details>
+
+            <details class="reveal">
+              <summary>Introducing InstantSOS</summary>
+              <ul
+                class="note"
+                style="
+                  margin: 8px 0 0;
+                  padding-left: 18px;
+                  display: grid;
+                  gap: 6px;
+                  color: var(--text);
+                "
+              >
+                <li>
+                  One-tap emergency trigger sends location and incident details
+                  instantly.
+                </li>
+                <li>
+                  Alerts the nearest available ambulance for rapid dispatch.
+                </li>
+                <li>Bypasses manual steps to save critical seconds.</li>
+                <li>Notifies hospitals to prepare for patient arrival.</li>
+              </ul>
+            </details>
+
+            <details class="reveal">
+              <summary>Choosing the type of service</summary>
+              <ul
+                class="note"
+                style="
+                  margin: 8px 0 0;
+                  padding-left: 18px;
+                  display: grid;
+                  gap: 6px;
+                  color: var(--text);
+                "
+              >
+                <li>
+                  Instantly choose between public or private ambulance services.
+                </li>
+                <li>
+                  Public requests auto-dispatched to the nearest government
+                  hospital.
+                </li>
+                <li>
+                  Private options filtered by proximity and price for
+                  flexibility.
+                </li>
+                <li>
+                  Ensures accessibility, speed, and fair competition among
+                  providers.
                 </li>
               </ul>
             </details>
@@ -435,14 +507,26 @@
                 "
               >
                 <li>
-                  Check real‑time availability and see the nearest options.
+                  Instantly find the most suitable ambulance using smart
+                  filters.
                 </li>
-                <li>Sort service providers by price when cost matters.</li>
+                <li>
+                  View real-time availability and choose the closest option for
+                  faster response.
+                </li>
+                <li>
+                  Private services ranked by price for transparent, informed
+                  choices.
+                </li>
+                <li>
+                  Improves efficiency, accessibility, and trust across all
+                  providers.
+                </li>
               </ul>
             </details>
 
             <details class="reveal">
-              <summary>Choosing the type of service</summary>
+              <summary>Tracking Capability</summary>
               <ul
                 class="note"
                 style="
@@ -453,54 +537,10 @@
                   color: var(--text);
                 "
               >
-                <li>Select public or private services as needed.</li>
-                <li>
-                  If public, details are sent to the nearest government
-                  hospital.
-                </li>
-                <li>
-                  If private, pick a provider based on proximity and price.
-                </li>
-              </ul>
-            </details>
-
-            <details class="reveal">
-              <summary>Incident priority checking</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>Assess severity to prioritize high‑risk incidents.</li>
-                <li>Include a doctor with the ambulance for critical cases.</li>
-              </ul>
-            </details>
-
-            <details class="reveal">
-              <summary>Detailed incident report</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>
-                  Key details (time, location, vitals, initial care) are
-                  captured and shared with the ER.
-                </li>
-                <li>
-                  Hospitals prepare resources in advance, improving
-                  stabilization upon arrival.
-                </li>
+                <li>View ambulance location live on an interactive map.</li>
+                <li>Shows fastest route and real-time ETA updates.</li>
+                <li>Hospitals can track routes to prepare teams in advance.</li>
+                <li>Patients get live alerts for updates and coordination.</li>
               </ul>
             </details>
           </div>
@@ -741,6 +781,9 @@
                 <li>One‑tap SOS</li>
                 <li>Live tracking</li>
                 <li>Family alerts</li>
+                <li>Upfront pricing</li>
+                <li>Cashless payments</li>
+                <li>Insurance support</li>
               </ul>
               <a class="btn btn-primary" href="#">Download for iOS</a>
             </div>
@@ -748,6 +791,9 @@
               <h3>Patients</h3>
               <div class="price">Free</div>
               <ul>
+                <li>One‑tap SOS</li>
+                <li>Live tracking</li>
+                <li>Family alerts</li>
                 <li>Upfront pricing</li>
                 <li>Cashless payments</li>
                 <li>Insurance support</li>
@@ -861,7 +907,7 @@
               </p>
               <p class="note">
                 Email: medigosdgp@gmail.com<br />
-                Phone: +1 (555) 123‑4567
+                Phone: +94 21 123 4567
               </p>
               <div class="btn-row">
                 <a
