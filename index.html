@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MediGo — On-demand Ambulance App</title>
+    <title>MediGo — Ambulance Dispatch & Monitoring System</title>
     <meta
       name="description"
-      content="MediGo connects patients with nearby ambulances in minutes. Live tracking, verified providers, and 24/7 support."
+      content="MediGo enables hospitals to assign ambulances, track drivers in real time, and coordinate emergency transport safely and efficiently."
     />
     <meta name="theme-color" content="#E53935" />
-    <meta property="og:title" content="MediGo — On-demand Ambulance App" />
+    <meta
+      property="og:title"
+      content="MediGo — Ambulance Dispatch & Monitoring System"
+    />
     <meta
       property="og:description"
-      content="MediGo connects patients with nearby ambulances in minutes. Live tracking, verified providers, and 24/7 support."
+      content="A digital system for hospitals to track ambulances, assign emergency transfers, and monitor fleet activity ethically and securely."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
-    <link
-      rel="icon"
-      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23E53935"/><path fill="white" d="M28 12h8v16h16v8H36v16h-8V36H12v-8h16V12z"/></svg>'
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -135,13 +134,14 @@
         />
       </symbol>
     </svg>
+    <!-- SVG ICON SPRITE (unchanged) -->
+    <!-- ... keep entire sprite exactly as-is ... -->
 
     <header>
       <a class="logo" href="#">
-        <span class="logo-badge"
-          ><svg width="18" height="18" aria-hidden="true">
-            <use href="#i-ambulance" /></svg
-        ></span>
+        <span class="logo-badge">
+          <svg width="18" height="18"><use href="#i-ambulance" /></svg>
+        </span>
         <span>MediGo</span>
       </a>
       <nav id="nav" aria-label="Primary">
@@ -157,18 +157,12 @@
         <a href="about.html">About</a>
       </nav>
       <div class="actions">
-        <a class="btn btn-outline" href="#download">Get the App</a>
-        <button
-          class="btn btn-outline theme-toggle"
-          type="button"
-          aria-label="Switch to dark mode"
-        >
+        <a class="btn btn-outline" href="#download">System Access</a>
+        <button class="btn btn-outline theme-toggle" type="button">
           <svg width="18" height="18" class="sun"><use href="#i-sun" /></svg>
-          <svg width="18" height="18" class="moon">
-            <use href="#i-moon" />
-          </svg>
+          <svg width="18" height="18" class="moon"><use href="#i-moon" /></svg>
         </button>
-        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+        <button id="menu-toggle" class="menu-toggle">
           <svg width="20" height="20"><use href="#i-menu" /></svg>
         </button>
       </div>
@@ -179,150 +173,130 @@
       <section class="hero">
         <div class="container">
           <div>
-            <span class="eyebrow"
-              ><svg width="16" height="16" aria-hidden="true">
-                <use href="#i-bolt" />
-              </svg>
-              Faster emergency response</span
-            >
-            <h1>Ambulance in minutes, not hours</h1>
+            <span class="eyebrow">
+              <svg width="16" height="16"><use href="#i-bolt" /></svg>
+              Hospital fleet coordination
+            </span>
+            <h1>Assign ambulances in seconds, monitor movements live</h1>
             <p>
-              MediGo connects you with the nearest verified ambulance. One‑tap
-              SOS, live GPS tracking, and real‑time updates to family and
-              hospitals.
+              MediGo enables hospital staff to allocate emergency transport,
+              view real-time ambulance locations, and support drivers with
+              navigation and communication tools — all without relying on phone
+              calls.
             </p>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#download"
-                ><svg width="18" height="18"><use href="#i-ambulance" /></svg>
-                Download App</a
-              >
-              <a class="btn btn-outline" href="#screens"
-                ><svg width="18" height="18"><use href="#i-gps" /></svg> Watch
-                demo</a
-              >
+              <a class="btn btn-primary" href="#download">
+                <svg width="18" height="18"><use href="#i-ambulance" /></svg>
+                Launch Dispatch Console
+              </a>
+              <a class="btn btn-outline" href="#screens">
+                <svg width="18" height="18"><use href="#i-gps" /></svg> View
+                Screens
+              </a>
             </div>
             <div class="trust-row">
-              <span
-                ><svg width="16" height="16"><use href="#i-shield" /></svg
-              ></span>
-              Trusted by 120+ hospitals • Avg response <strong>6m 20s</strong>
+              <svg width="16" height="16"><use href="#i-shield" /></svg>
+              Built ethically — supports responsible emergency coordination
             </div>
             <div class="kpis">
               <div class="tile">
-                <div class="num">250k+</div>
-                <div class="label">Downloads</div>
+                <div class="num">Fleet</div>
+                <div class="label">Status visibility</div>
               </div>
               <div class="tile">
-                <div class="num">98.7%</div>
-                <div class="label">On‑time arrivals</div>
+                <div class="num">Live</div>
+                <div class="label">GPS tracking</div>
               </div>
               <div class="tile">
-                <div class="num">45</div>
-                <div class="label">Cities covered</div>
+                <div class="num">Secure</div>
+                <div class="label">Driver monitoring</div>
               </div>
             </div>
           </div>
 
           <div class="phone surface reveal">
-            <div class="screen" aria-label="App preview">
-              <div class="slide active" id="slide-1">
+            <div class="screen">
+              <div class="slide active">
                 <div class="slide-content">
                   <svg width="56" height="56" class="icon-center c-cyan">
                     <use href="#i-gps" />
                   </svg>
-                  <div class="slide-title">Live Ambulance Tracking</div>
-                  <div class="slide-sub">Know exactly when help arrives</div>
+                  <div class="slide-title">Live Fleet Tracking</div>
+                  <div class="slide-sub">
+                    Monitor unit locations continuously
+                  </div>
                 </div>
-                <span class="badge">Slide 1/3</span>
+                <span class="badge">Preview 1/3</span>
               </div>
-              <div class="slide" id="slide-2">
+              <div class="slide">
                 <div class="slide-content">
                   <svg width="56" height="56" class="icon-center c-rose">
                     <use href="#i-bell" />
                   </svg>
-                  <div class="slide-title">One‑tap SOS</div>
-                  <div class="slide-sub">Instant dispatch to nearest unit</div>
+                  <div class="slide-title">Dispatch Alerts</div>
+                  <div class="slide-sub">
+                    Drivers receive organised task updates
+                  </div>
                 </div>
-                <span class="badge">Slide 2/3</span>
+                <span class="badge">Preview 2/3</span>
               </div>
-              <div class="slide" id="slide-3">
+              <div class="slide">
                 <div class="slide-content">
                   <svg width="56" height="56" class="icon-center c-green">
                     <use href="#i-shield" />
                   </svg>
-                  <div class="slide-title">Verified Providers</div>
-                  <div class="slide-sub">Quality you can trust</div>
+                  <div class="slide-title">Ethical Access</div>
+                  <div class="slide-sub">
+                    Usage restricted to authorised staff
+                  </div>
                 </div>
-                <span class="badge">Slide 3/3</span>
+                <span class="badge">Preview 3/3</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- OVERVIEW & OBJECTIVE -->
+      <!-- OVERVIEW -->
       <section id="overview">
         <div class="container">
           <div class="section-head reveal">
             <h2>Overview & Objective</h2>
-            <p>Anyone can book an ambulance easily in critical conditions.</p>
+            <p>
+              A coordinated way for hospitals to manage emergency ambulance
+              fleets.
+            </p>
           </div>
-
           <div class="surface pad-18 reveal">
-            <ul
-              style="
-                margin: 0;
-                padding-left: 18px;
-                display: grid;
-                gap: 8px;
-                font-size: 16px;
-                color: var(--text);
-              "
-            >
-              <li>Fast communication between the user and the provider.</li>
+            <ul>
               <li>
-                Users can see which hospital and service is closest to them.
+                Assign emergency transfers digitally instead of calling drivers.
               </li>
               <li>
-                Patients arrive more stabilized since the incident report is
-                shared in advance.
+                Track vehicle movement to support informed routing decisions.
               </li>
+              <li>Monitor trip status and driver availability.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- PROBLEMS & CHALLENGES -->
+      <!-- PROBLEMS -->
       <section id="problems">
         <div class="container">
           <div class="section-head reveal">
             <h2>Problems & Challenges</h2>
-            <p>Real pain points we’re solving in Sri Lanka.</p>
+            <p>
+              Operational gaps observed in Sri Lankan emergency coordination.
+            </p>
           </div>
-
           <div class="surface pad-18 reveal">
-            <ul
-              style="
-                margin: 0;
-                padding-left: 18px;
-                display: grid;
-                gap: 8px;
-                font-size: 16px;
-                color: var(--text);
-              "
-            >
+            <ul>
               <li>
-                In Sri Lanka, ambulance booking can be a major challenge for
-                many people.
+                Hospital-to-ambulance communication often relies on calls.
               </li>
-              <li>
-                Explaining the exact location of the incident can be
-                time‑consuming.
-              </li>
-              <li>
-                Waiting without being able to check ambulance location is
-                stressful.
-              </li>
+              <li>No central dashboard for tracking ambulances in motion.</li>
+              <li>Trip documentation and logs remain manual or fragmented.</li>
             </ul>
           </div>
         </div>
@@ -334,213 +308,131 @@
           <div class="section-head reveal">
             <h2>Features</h2>
             <p>
-              Built for speed, clarity, and the right care at the right time.
+              Designed for operational efficiency, transparency, and safety.
             </p>
           </div>
 
           <div class="features">
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-voice" /></svg>
+                <svg width="20"><use href="#i-voice" /></svg>
               </div>
-              <h3>Speech-to-text</h3>
+              <h3>Driver voice notes</h3>
               <p>
-                Users can speak their incident details, instantly converting
-                voice to text for faster, hands-free emergency reporting.
+                Staff receive spoken status updates from drivers without
+                requiring calls.
               </p>
             </div>
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-bolt" /></svg>
+                <svg width="20"><use href="#i-bolt" /></svg>
               </div>
-              <h3>Introducing InstantSOS</h3>
+              <h3>Instant Dispatch Alerts</h3>
               <p>
-                One-tap emergency trigger instantly sends location and incident
-                details, alerts ambulances, and notifies hospitals to save
-                critical seconds.
+                Hospitals assign a transfer, and the driver's device receives an
+                immediate notification.
               </p>
             </div>
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-file" /></svg>
+                <svg width="20"><use href="#i-file" /></svg>
               </div>
-              <h3>Detailed incident report</h3>
+              <h3>Automated Trip Records</h3>
               <p>
-                Auto‑generated report with timestamps, vitals, and treatments;
-                shared with hospitals in advance.
+                Logs capture timestamps, vehicle status, and assignment details
+                for audit.
               </p>
             </div>
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-ambulance" /></svg>
+                <svg width="20"><use href="#i-ambulance" /></svg>
               </div>
-              <h3>Choose the type of service</h3>
+              <h3>Service Categorisation</h3>
               <p>
-                Select public or private services: BLS, ALS, neonatal,
-                wheelchair, or inter‑facility transport.
+                Vehicles can be tagged (e.g., general transfer, critical,
+                equipment transport).
               </p>
             </div>
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-filter" /></svg>
+                <svg width="20"><use href="#i-filter" /></svg>
               </div>
-              <h3>Filter by proximity, price, availability</h3>
+              <h3>Availability Filters</h3>
               <p>
-                Quickly find the best match by distance, cost, and real‑time
-                availability.
+                View ambulances by distance, availability, or assignment status.
               </p>
             </div>
 
             <div class="feature reveal">
               <div class="icon">
-                <svg width="20" height="20"><use href="#i-gps" /></svg>
+                <svg width="20"><use href="#i-gps" /></svg>
               </div>
-              <h3>Tracking capability</h3>
+              <h3>GPS Monitoring</h3>
               <p>
-                Live GPS tracking with real‑time ETA and a shareable trip link
-                for family.
+                Supports routing efficiency and helps hospitals prepare in
+                advance.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- FEATURE DETAILS (ACCORDION) -->
+      <!-- FEATURE DETAILS -->
       <section id="details">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Feature details</h2>
-            <p>How each capability improves outcomes during emergencies.</p>
+            <h2>Feature Details</h2>
+            <p>How digital coordination supports clinical operations.</p>
           </div>
-
           <div class="faq">
             <details class="reveal">
-              <summary>Speech-to-text</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
+              <summary>Driver voice notes</summary>
+              <ul>
+                <li>Communicate status without interrupting driving.</li>
+                <li>Reduces peak-time phone congestion.</li>
+              </ul>
+            </details>
+
+            <details class="reveal">
+              <summary>Instant Dispatch Alerts</summary>
+              <ul>
+                <li>Allocations are issued digitally from the dashboard.</li>
                 <li>
-                  Users can speak their incident details instead of typing.
-                </li>
-                <li>Converts voice to text instantly for faster reporting.</li>
-                <li>
-                  Enables hands-free emergency requests when time matters most.
+                  Drivers accept and acknowledge through their mobile devices.
                 </li>
               </ul>
             </details>
 
             <details class="reveal">
-              <summary>Introducing InstantSOS</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
+              <summary>Service Categorisation</summary>
+              <ul>
                 <li>
-                  One-tap emergency trigger sends location and incident details
-                  instantly.
+                  Helps assign the correct transport type for each operational
+                  scenario.
                 </li>
                 <li>
-                  Alerts the nearest available ambulance for rapid dispatch.
-                </li>
-                <li>Bypasses manual steps to save critical seconds.</li>
-                <li>Notifies hospitals to prepare for patient arrival.</li>
-              </ul>
-            </details>
-
-            <details class="reveal">
-              <summary>Choosing the type of service</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>
-                  Instantly choose between public or private ambulance services.
-                </li>
-                <li>
-                  Public requests auto-dispatched to the nearest government
-                  hospital.
-                </li>
-                <li>
-                  Private options filtered by proximity and price for
-                  flexibility.
-                </li>
-                <li>
-                  Ensures accessibility, speed, and fair competition among
-                  providers.
+                  Supports coordination between public and private fleets.
                 </li>
               </ul>
             </details>
 
             <details class="reveal">
-              <summary>Filter by proximity, price, availability</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>
-                  Instantly find the most suitable ambulance using smart
-                  filters.
-                </li>
-                <li>
-                  View real-time availability and choose the closest option for
-                  faster response.
-                </li>
-                <li>
-                  Private services ranked by price for transparent, informed
-                  choices.
-                </li>
-                <li>
-                  Improves efficiency, accessibility, and trust across all
-                  providers.
-                </li>
+              <summary>Availability Filters</summary>
+              <ul>
+                <li>Spot closest or idle vehicles.</li>
+                <li>Prioritise assignment efficiency.</li>
               </ul>
             </details>
 
             <details class="reveal">
-              <summary>Tracking Capability</summary>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>View ambulance location live on an interactive map.</li>
-                <li>Shows fastest route and real-time ETA updates.</li>
-                <li>Hospitals can track routes to prepare teams in advance.</li>
-                <li>Patients get live alerts for updates and coordination.</li>
+              <summary>GPS Monitoring</summary>
+              <ul>
+                <li>Shows travel progress and arrival proximity.</li>
+                <li>Allows hospitals to prepare ahead of arrival.</li>
               </ul>
             </details>
           </div>
@@ -552,29 +444,23 @@
         <div class="container">
           <div class="section-head reveal">
             <h2>How it works</h2>
-            <p>From tap to treatment in three simple steps.</p>
+            <p>Three main interactions between hospital and driver.</p>
           </div>
           <div class="steps">
             <div class="step reveal">
               <div class="num">1</div>
-              <h3>Request</h3>
-              <p>
-                Tap SOS or choose ambulance type, then confirm pickup details.
-              </p>
+              <h3>Assign</h3>
+              <p>Hospital allocates a transport request to a driver.</p>
             </div>
             <div class="step reveal">
               <div class="num">2</div>
-              <h3>Track</h3>
-              <p>
-                See ETA, crew details, and live location sharing with family.
-              </p>
+              <h3>Monitor</h3>
+              <p>GPS and status updates display in real time.</p>
             </div>
             <div class="step reveal">
               <div class="num">3</div>
-              <h3>Handover</h3>
-              <p>
-                Arrive at the selected hospital with digital handover summary.
-              </p>
+              <h3>Record</h3>
+              <p>Trip details are logged for safety and reporting.</p>
             </div>
           </div>
         </div>
@@ -584,51 +470,36 @@
       <section id="screens">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Product screens</h2>
-            <p>Explore key screens from the app.</p>
+            <h2>System Screens</h2>
+            <p>Preview hospital dashboard and mobile driver UI.</p>
           </div>
 
           <div class="slider surface reveal" data-slider="screens">
-            <div class="slider-track" id="screensTrack">
+            <div class="slider-track">
               <article class="slide-card">
-                <div
-                  class="img"
-                  role="img"
-                  aria-label="Live tracking UI placeholder"
-                ></div>
+                <div class="img"></div>
                 <div>
-                  <h3>Live tracking and ETA</h3>
+                  <h3>Live Dashboard</h3>
                   <p>
-                    Transparent arrival times, crew details, and route sharing
-                    keep everyone informed.
+                    Displays fleet availability, current assignments, and live
+                    movements.
                   </p>
                 </div>
               </article>
               <article class="slide-card">
-                <div
-                  class="img"
-                  role="img"
-                  aria-label="SOS request UI placeholder"
-                ></div>
+                <div class="img"></div>
                 <div>
-                  <h3>One‑tap SOS</h3>
-                  <p>
-                    Request help instantly with pre‑saved medical details and
-                    preferences.
-                  </p>
+                  <h3>Dispatch Console</h3>
+                  <p>Assign tasks digitally and notify drivers instantly.</p>
                 </div>
               </article>
               <article class="slide-card">
-                <div
-                  class="img"
-                  role="img"
-                  aria-label="Provider verification UI placeholder"
-                ></div>
+                <div class="img"></div>
                 <div>
-                  <h3>Verified providers</h3>
+                  <h3>Driver Mobile App</h3>
                   <p>
-                    Licensed ambulances, vetted EMTs, and partner hospitals you
-                    can trust.
+                    Drivers receive assignments, navigation support, and log
+                    completion.
                   </p>
                 </div>
               </article>
@@ -650,10 +521,11 @@
       <section id="benefits">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Beyond the Call: Benefits for Everyone</h2>
-            <p>Impact for hospitals, clinics, and service providers.</p>
+            <h2>Operational Value</h2>
+            <p>
+              Improvements for hospital logistics and emergency coordination.
+            </p>
           </div>
-
           <div
             class="reveal"
             style="
@@ -663,40 +535,20 @@
             "
           >
             <div class="surface pad-18">
-              <h3>For Hospitals & Clinics</h3>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>Faster patient intake</li>
-                <li>Reduced emergency room chaos</li>
-                <li>Better use of resources</li>
-                <li>Increased trust & reputation</li>
+              <h3>For Hospitals</h3>
+              <ul>
+                <li>Better oversight of vehicle availability.</li>
+                <li>Improved resource allocation.</li>
+                <li>Digital audit trails for reporting.</li>
               </ul>
             </div>
 
             <div class="surface pad-18">
-              <h3>For Ambulance Service Providers (Public & Private)</h3>
-              <ul
-                class="note"
-                style="
-                  margin: 8px 0 0;
-                  padding-left: 18px;
-                  display: grid;
-                  gap: 6px;
-                  color: var(--text);
-                "
-              >
-                <li>Higher efficiency</li>
-                <li>More visibility & demand</li>
-                <li>Revenue growth (for the private sector)</li>
-                <li>Data insights</li>
+              <h3>For Ambulance Providers</h3>
+              <ul>
+                <li>Coordinated scheduling instead of manual calls.</li>
+                <li>Transparency into trip routing.</li>
+                <li>Consistent logging for fleet review.</li>
               </ul>
             </div>
           </div>
@@ -707,19 +559,17 @@
       <section id="coverage">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Where we operate</h2>
-            <p>Rolling out across Sri Lanka with certified partners.</p>
+            <h2>Where it can operate</h2>
+            <p>
+              Deployable across hospitals, clinics, and regional transport
+              fleets.
+            </p>
           </div>
           <div class="chips reveal">
-            <span class="chip">Colombo</span>
-            <span class="chip">Kandy</span>
-            <span class="chip">Galle</span>
-            <span class="chip">Jaffna</span>
-            <span class="chip">Negombo</span>
-            <span class="chip">Gampaha</span>
-            <span class="chip">Matara</span>
-            <span class="chip">Kurunegala</span>
-            <span class="chip">Sri Jayawardenepura Kotte</span>
+            <span class="chip">Multi-hospital networks</span>
+            <span class="chip">Private ambulance operators</span>
+            <span class="chip">Regional coordination centres</span>
+            <span class="chip">Teaching hospitals</span>
           </div>
         </div>
       </section>
@@ -728,87 +578,72 @@
       <section>
         <div class="container">
           <div class="section-head reveal">
-            <h2>Loved by patients and providers</h2>
-            <p>What people say about MediGo.</p>
+            <h2>Feedback</h2>
+            <p>Input from simulated stakeholders.</p>
           </div>
           <div class="testi">
             <div class="quote reveal">
               <p>
-                “MediGo turned a stressful night into a coordinated response.
-                The live tracking was a lifesaver for our family.”
+                “Our staff no longer chase updates by phone. A single dashboard
+                displays everything needed.”
               </p>
-              <div class="who">
-                <svg width="14" height="14"><use href="#i-star" /></svg> Priya •
-                Patient
-              </div>
+              <div class="who">Hospital Admin (Simulated)</div>
             </div>
             <div class="quote reveal">
               <p>
-                “Dispatch efficiency improved by 30%. Our crews get to patients
-                faster with better info.”
+                “Assignments are received clearly on the device, helping drivers
+                plan their route.”
               </p>
-              <div class="who">
-                <svg width="14" height="14"><use href="#i-star" /></svg> Mark •
-                EMS Operator
-              </div>
+              <div class="who">Ambulance Driver (Simulated)</div>
             </div>
             <div class="quote reveal">
               <p>
-                “Smooth handover and accurate ETAs. Our ER can prep resources
-                before arrival.”
+                “Live tracking supports better preparation when patients are
+                en-route.”
               </p>
-              <div class="who">
-                <svg width="14" height="14"><use href="#i-star" /></svg> Dr.
-                Chen • ER Lead
-              </div>
+              <div class="who">Clinical Coordinator (Simulated)</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PRICING / VALUE -->
+      <!-- ACCESS -->
       <section id="download">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Simple, transparent</h2>
-            <p>Free to download. Pay per ride with upfront pricing.</p>
+            <h2>Access Options</h2>
+            <p>
+              Desktop dashboard for hospitals, mobile app for ambulance teams.
+            </p>
           </div>
           <div class="pricing">
             <div class="plan reveal">
-              <h3>Patients</h3>
-              <div class="price">Free</div>
+              <h3>Hospital Staff</h3>
+              <div class="price">Login Required</div>
               <ul>
-                <li>One‑tap SOS</li>
+                <li>Dispatch management</li>
                 <li>Live tracking</li>
-                <li>Family alerts</li>
-                <li>Upfront pricing</li>
-                <li>Cashless payments</li>
-                <li>Insurance support</li>
+                <li>Reporting</li>
               </ul>
-              <a class="btn btn-primary" href="#">Download for iOS</a>
+              <a class="btn btn-primary" href="#">Launch Console</a>
             </div>
             <div class="plan reveal">
-              <h3>Patients</h3>
-              <div class="price">Free</div>
+              <h3>Ambulance Drivers</h3>
+              <div class="price">Login Required</div>
               <ul>
-                <li>One‑tap SOS</li>
-                <li>Live tracking</li>
-                <li>Family alerts</li>
-                <li>Upfront pricing</li>
-                <li>Cashless payments</li>
-                <li>Insurance support</li>
+                <li>Assignment alerts</li>
+                <li>Navigation support</li>
+                <li>Trip updates</li>
               </ul>
-              <a class="btn btn-primary" href="#">Download for Android</a>
+              <a class="btn btn-primary" href="#">Driver App</a>
             </div>
             <div class="plan reveal">
-              <h3>Operators</h3>
-              <div class="price">Contact us</div>
+              <h3>Integration</h3>
+              <div class="price">Optional</div>
               <ul>
-                <li>Dispatch console</li>
-                <li>Fleet tracking</li>
-                <li>Analytics</li>
+                <li>Multi-hospital networks</li>
               </ul>
-              <a class="btn btn-outline" href="#contact">Become a partner</a>
+              <a class="btn btn-outline" href="#contact">Contact team</a>
             </div>
           </div>
         </div>
@@ -819,29 +654,28 @@
         <div class="container">
           <div class="section-head reveal">
             <h2>FAQs</h2>
-            <p>Answers to common questions.</p>
+            <p>General clarification about the system.</p>
           </div>
           <div class="faq">
             <details class="reveal">
-              <summary>Is MediGo an emergency service?</summary>
+              <summary>Is MediGo a clinical emergency service?</summary>
               <div class="note">
-                MediGo connects you to nearby verified providers. In
-                life‑threatening emergencies, always call your local emergency
-                number first.
+                No — MediGo is a coordination and tracking system. Clinical
+                emergencies must still be escalated through appropriate
+                emergency channels.
               </div>
             </details>
             <details class="reveal">
-              <summary>How fast can an ambulance arrive?</summary>
+              <summary>Does MediGo handle patient records?</summary>
               <div class="note">
-                Arrival time varies by location and traffic. Our current median
-                is 6–8 minutes in covered cities.
+                No — the system does not store clinical patient information.
               </div>
             </details>
             <details class="reveal">
-              <summary>How is my data protected?</summary>
+              <summary>Where is tracking visible?</summary>
               <div class="note">
-                We use encryption in transit and at rest. Only necessary data is
-                shared with providers to deliver care.
+                Only authorised hospital staff assigned to fleet coordination
+                can view location data.
               </div>
             </details>
           </div>
@@ -852,14 +686,14 @@
       <section id="contact">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Get in touch</h2>
-            <p>Partnerships, media, or enterprise deployments.</p>
+            <h2>Contact team</h2>
+            <p>For institutional collaboration or academic review.</p>
           </div>
           <div class="contact">
             <form class="form" id="contactForm" novalidate>
               <div class="row">
                 <div>
-                  <label for="name">MediGo</label>
+                  <label for="name">Name</label>
                   <input
                     id="name"
                     name="name"
@@ -884,56 +718,26 @@
                   id="message"
                   name="message"
                   required
-                  placeholder="Tell us how we can help"
+                  placeholder="Describe your query"
                 ></textarea>
               </div>
-              <button class="btn btn-primary" type="submit">
-                Send message
-              </button>
-              <div
-                id="formMsg"
-                class="note"
-                role="status"
-                aria-live="polite"
-              ></div>
+              <button class="btn btn-primary" type="submit">Send</button>
+              <div id="formMsg" class="note"></div>
             </form>
 
             <div class="surface pad-18">
-              <h3>Company</h3>
+              <h3>Project Context</h3>
               <p class="note">
-                MediGo Ltd.<br />
-                123 Health Ave, Suite 200<br />
-                Your City, Country
+                Academic research project exploring operational support for
+                emergency transport logistics.
               </p>
-              <p class="note">
-                Email: medigosdgp@gmail.com<br />
-                Phone: +94 21 123 4567
-              </p>
-              <div class="btn-row">
-                <a
-                  class="btn btn-outline"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                  ><svg width="16" height="16"><use href="#i-globe" /></svg>
-                  LinkedIn</a
-                >
-                <a
-                  class="btn btn-outline"
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                  ><svg width="16" height="16"><use href="#i-globe" /></svg>
-                  Twitter</a
-                >
-              </div>
+              <p class="note">Contact: medigosdgp@gmail.com</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ENHANCED FOOTER -->
     <footer>
       <div class="container">
         <div class="footer-grid">
@@ -948,10 +752,6 @@
             <p class="note">
               On‑demand ambulance app. Built as a Year 2 group project (BSc Hons
               CS), University of Westminster.
-            </p>
-            <p class="note">
-              <strong>Emergency?</strong> Call your local emergency number. In
-              Sri Lanka: <a href="tel:1990">1990</a> (Suwaseriya).
             </p>
             <div class="footer-social">
               <a
@@ -982,11 +782,11 @@
           <div class="footer-col">
             <h4>Product</h4>
             <ul class="footer-links">
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#how">How it works</a></li>
-              <li><a href="#screens">Screens</a></li>
-              <li><a href="#download">Download</a></li>
+              <li><a href="index.html#overview">Overview</a></li>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#how">How it works</a></li>
+              <li><a href="index.html#screens">Screens</a></li>
+              <li><a href="index.html#download">Download</a></li>
             </ul>
           </div>
 
@@ -994,7 +794,7 @@
           <div class="footer-col">
             <h4>Resources</h4>
             <ul class="footer-links">
-              <li><a href="#faq">Help Center</a></li>
+              <li><a href="index.html#faq">Help Center</a></li>
               <li>
                 <a href="#" target="_blank" rel="noopener"
                   >Project report (PDF)</a
@@ -1012,8 +812,8 @@
             <h4>Company</h4>
             <ul class="footer-links">
               <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#contact">Become a partner</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#contact">Become a partner</a></li>
               <li>
                 <a
                   href="https://www.westminster.ac.uk/"
@@ -1042,15 +842,12 @@
 
         <div class="footer-bottom">
           <div>© <span id="year"></span> MediGo. All rights reserved.</div>
-          <div class="note">
-            In life‑threatening situations, call your local emergency number
-            (e.g., 1990 in Sri Lanka).
-          </div>
+          <div>Made with ♥ by the MediGo Team.</div>
         </div>
       </div>
     </footer>
 
-    <button class="to-top" aria-label="Back to top" title="Back to top">
+    <button class="to-top">
       <svg width="18" height="18" class="flip"><use href="#i-arrow" /></svg>
     </button>
   </body>

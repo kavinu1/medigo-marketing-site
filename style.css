@@ -33,6 +33,15 @@ textarea {
   color: inherit;
 }
 
+p {
+  font-size: 18px;
+}
+
+ul li {
+  font-size: 18px;
+  line-height: 2.5rem;
+}
+
 /* ========== THEME BASE ========== */
 :root {
   --brand: #e53935;
@@ -270,7 +279,7 @@ nav a:focus {
 }
 .hero p {
   color: var(--muted);
-  font-size: clamp(16px, 2.2vw, 20px);
+  font-size: clamp(18px, 2.2vw, 20px);
   margin: 0 0 22px;
 }
 .cta-row {
@@ -285,7 +294,7 @@ nav a:focus {
   align-items: center;
   margin-top: 16px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 .kpis {
   display: grid;
@@ -304,7 +313,7 @@ nav a:focus {
 }
 .kpis .label {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* Phone mock */
@@ -361,7 +370,7 @@ nav a:focus {
   color: #fff;
   padding: 6px 10px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* Slide content helpers */
@@ -373,11 +382,11 @@ nav a:focus {
 }
 .slide-title {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
 }
 .slide-sub {
   opacity: 0.8;
-  font-size: 14px;
+  font-size: 18px;
 }
 .icon-center {
   display: block;
@@ -443,12 +452,12 @@ section {
 }
 .feature h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 .feature p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 18px;
 }
 @media (max-width: 1024px) {
   .features {
@@ -610,7 +619,7 @@ section {
 }
 .quote .who {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 18px;
 }
 @media (max-width: 900px) {
   .testi {
@@ -665,6 +674,7 @@ details {
 }
 details summary {
   cursor: pointer;
+  font-size: 18px;
   font-weight: 700;
 }
 details[open] {
@@ -691,7 +701,7 @@ details[open] {
   gap: 12px;
 }
 label {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--muted);
 }
 input,
@@ -708,7 +718,7 @@ textarea {
   resize: vertical;
 }
 .note {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--muted);
 }
 @media (max-width: 960px) {
@@ -824,7 +834,7 @@ svg.flip {
   margin-bottom: 10px;
 }
 .tag {
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px 8px;
   border-radius: 999px;
   border: 1px solid rgba(120, 130, 150, 0.2);
@@ -850,6 +860,54 @@ svg.flip {
 @media (max-width: 640px) {
   .footer-grid {
     grid-template-columns: 1fr;
+
+    p {
+      font-size: defualt;
+    }
+
+    ul li {
+      font-size: default;
+      line-height: default;
+    }
+  }
+  .hero p {
+    font-size: clamp(16px);
+  }
+  .trust-row {
+    font-size: 14px;
+  }
+  .kpis .label {
+    font-size: 12px;
+  }
+  .screen .badge {
+    font-size: 12px;
+  }
+  .slide-title {
+    font-size: 20px;
+  }
+  .slide-sub {
+    font-size: 14px;
+  }
+  .slide-title {
+    font-size: 20px;
+  }
+  .slide-sub {
+    font-size: 14px;
+  }
+  .quote .who {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .note {
+    font-size: 13px;
+  }
+  .tag {
+    font-size: 12px;
+  }
+  .footer-col h4 {
+    font-size: 14px;
   }
 }
 .footer-brand .brand-row {
@@ -863,7 +921,7 @@ svg.flip {
 }
 .footer-col h4 {
   margin: 0 0 10px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--muted);
