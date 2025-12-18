@@ -100,6 +100,11 @@ ul li {
 .pad-18 {
   padding: 18px;
 }
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
 .row-flex {
   display: flex;
   align-items: center;
@@ -858,17 +863,12 @@ svg.flip {
   }
 }
 @media (max-width: 640px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-
-    p {
-      font-size: defualt;
-    }
-
-    ul li {
-      font-size: default;
-      line-height: default;
-    }
+  p {
+    font-size: defualt;
+  }
+  ul li {
+    font-size: default;
+    line-height: default;
   }
   .hero p {
     font-size: clamp(16px);
@@ -908,6 +908,18 @@ svg.flip {
   }
   .footer-col h4 {
     font-size: 14px;
+  }
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .price {
+    font-size: 24px;
+  }
+  .btn {
+    padding: 8px 14px;
   }
 }
 .footer-brand .brand-row {
