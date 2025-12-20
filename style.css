@@ -157,15 +157,11 @@ header {
   font-weight: 800;
   letter-spacing: 0.3px;
 }
-.logo-badge {
+.logo-img {
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: var(--brand);
-  display: grid;
-  place-items: center;
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(229, 57, 53, 0.35);
+  box-shadow: 0 5px 25px rgba(229, 57, 53, 0.35);
 }
 nav a {
   color: var(--muted);
