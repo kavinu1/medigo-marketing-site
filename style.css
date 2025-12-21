@@ -793,6 +793,9 @@ svg.flip {
   .team-grid {
     grid-template-columns: 1fr;
   }
+  .member-card {
+    grid-template-columns: 84px 1fr;
+  }
 }
 .member-card {
   display: grid;
