@@ -784,7 +784,7 @@ svg.flip {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -796,7 +796,7 @@ svg.flip {
 }
 .member-card {
   display: grid;
-  grid-template-columns: 84px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 14px;
   background: var(--surface);
   border-radius: var(--radius);
@@ -806,8 +806,8 @@ svg.flip {
   border: 1px solid rgba(120, 130, 150, 0.12);
 }
 .avatar {
-  width: 84px;
-  height: 84px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   display: grid;
   place-items: center;

@@ -6,7 +6,7 @@
     <title>About Us — MediGo</title>
     <meta
       name="description"
-      content="Meet the team behind MediGo. A second-year BSc (Hons) Computer Science group project at the University of Westminster."
+      content="Meet the team behind MediGo — a hospital–ambulance coordination platform developed as a second-year BSc (Hons) Computer Science group project at the University of Westminster."
     />
     <link rel="icon" href="./assets/images/ambulance-icon.png" />
     <link rel="stylesheet" href="style.css" />
@@ -86,16 +86,16 @@
         <a href="about.html" aria-current="page">About</a>
       </nav>
       <div class="actions">
-        <a class="btn btn-outline" href="index.html#download">Get the App</a>
+        <a class="btn btn-outline" href="index.html#download"
+          >Mobile App Preview</a
+        >
         <button
           class="btn btn-outline theme-toggle"
           type="button"
           aria-label="Switch to dark mode"
         >
           <svg width="18" height="18" class="sun"><use href="#i-sun" /></svg>
-          <svg width="18" height="18" class="moon">
-            <use href="#i-moon" />
-          </svg>
+          <svg width="18" height="18" class="moon"><use href="#i-moon" /></svg>
         </button>
         <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
           <svg width="20" height="20"><use href="#i-menu" /></svg>
@@ -112,8 +112,9 @@
             <h1>Meet the Team</h1>
             <p>
               A second-year BSc (Hons) Computer Science group project at the
-              University of Westminster. We built MediGo to make ambulance
-              booking faster, clearer, and more reliable in critical moments.
+              University of Westminster. MediGo is designed to support hospitals
+              with real-time ambulance coordination, faster dispatch decisions,
+              and secure communication between operations staff and drivers.
             </p>
             <div class="kpis">
               <div class="tile">
@@ -138,7 +139,9 @@
         <div class="container">
           <div class="section-head reveal">
             <h2>Our Objective</h2>
-            <p>Anyone can book an ambulance easily in critical conditions.</p>
+            <p>
+              Enable hospitals to coordinate ambulances efficiently and safely.
+            </p>
           </div>
           <div class="surface pad-18 reveal">
             <ul
@@ -151,11 +154,13 @@
                 color: var(--text);
               "
             >
-              <li>Fast communication between the user and the provider.</li>
-              <li>Show the closest hospital and service options.</li>
+              <li>Real-time task assignment from hospital dispatchers.</li>
               <li>
-                Share incident reports in advance so patients arrive more
-                stabilized.
+                Secure location tracking and status reporting during trips.
+              </li>
+              <li>
+                Support operational awareness without transmitting patient
+                records.
               </li>
             </ul>
           </div>
@@ -168,19 +173,22 @@
           <div class="section-head reveal">
             <h2>Our Team</h2>
             <p>
-              6 members collaborating across product, design, and engineering.
+              6 members collaborating across backend systems, mobile
+              engineering, frontend UI, data, QA, and DevOps.
             </p>
           </div>
 
           <div class="team-grid">
-            <!-- Replace placeholders with real details -->
+            <!-- Members retained as placeholders -->
             <article class="member-card reveal">
               <div class="avatar" aria-hidden="true">M1</div>
               <div class="member-body">
                 <h3 class="member-name">Member One</h3>
                 <div class="role">Team Lead • Backend</div>
                 <p class="bio">
-                  Owns system architecture, APIs, and deployment pipeline.
+                  Designs system architecture, backend services, and deployment
+                  pipelines for coordination between hospitals and ambulance
+                  drivers.
                 </p>
                 <div class="tags">
                   <span class="tag">Node.js</span
@@ -191,19 +199,18 @@
                   <a
                     href="mailto:member1@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -214,8 +221,8 @@
                 <h3 class="member-name">Member Two</h3>
                 <div class="role">Mobile (Android)</div>
                 <p class="bio">
-                  Implements SOS flows, live tracking, and notifications on
-                  mobile.
+                  Implements driver-side workflows including task assignment,
+                  navigation, and status updates during ambulance transfers.
                 </p>
                 <div class="tags">
                   <span class="tag">Kotlin</span><span class="tag">Maps</span
@@ -225,19 +232,18 @@
                   <a
                     href="mailto:member2@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -248,7 +254,8 @@
                 <h3 class="member-name">Member Three</h3>
                 <div class="role">Frontend (Web)</div>
                 <p class="bio">
-                  Marketing site, operator dashboard UI, and accessibility.
+                  Builds the hospital dashboard interface, improves usability,
+                  and maintains responsive design for operators.
                 </p>
                 <div class="tags">
                   <span class="tag">HTML</span><span class="tag">CSS</span
@@ -258,19 +265,18 @@
                   <a
                     href="mailto:member3@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -281,7 +287,9 @@
                 <h3 class="member-name">Member Four</h3>
                 <div class="role">UX/UI Design</div>
                 <p class="bio">
-                  User research, flows, prototypes, and design system.
+                  Conducts user research, maps operator requirements, and
+                  delivers prototypes for clear dispatch and monitoring
+                  workflows.
                 </p>
                 <div class="tags">
                   <span class="tag">Figma</span
@@ -292,19 +300,18 @@
                   <a
                     href="mailto:member4@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -315,7 +322,8 @@
                 <h3 class="member-name">Member Five</h3>
                 <div class="role">Data & Integrations</div>
                 <p class="bio">
-                  Incident report schema, analytics, and hospital integrations.
+                  Works on data models for transfer logging, analytics
+                  dashboards, and integration paths for hospital systems.
                 </p>
                 <div class="tags">
                   <span class="tag">ETL</span><span class="tag">APIs</span
@@ -325,19 +333,18 @@
                   <a
                     href="mailto:member5@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -348,7 +355,8 @@
                 <h3 class="member-name">Member Six</h3>
                 <div class="role">QA & DevOps</div>
                 <p class="bio">
-                  Testing strategy, CI, releases, and system reliability.
+                  Oversees testing strategy, CI pipelines, release management,
+                  and reliability monitoring across development.
                 </p>
                 <div class="tags">
                   <span class="tag">Testing</span><span class="tag">CI/CD</span
@@ -358,19 +366,18 @@
                   <a
                     href="mailto:member6@example.com"
                     class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-mail" /></svg>
-                    Email</a
                   >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16">
-                      <use href="#i-linkedin" />
-                    </svg>
-                    LinkedIn</a
-                  >
-                  <a href="#" class="btn btn-outline sm"
-                    ><svg width="16" height="16"><use href="#i-github" /></svg>
-                    GitHub</a
-                  >
+                    <svg width="16" height="16"><use href="#i-mail" /></svg
+                    >Email
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
+                    >LinkedIn
+                  </a>
+                  <a href="#" class="btn btn-outline sm">
+                    <svg width="16" height="16"><use href="#i-github" /></svg
+                    >GitHub
+                  </a>
                 </div>
               </div>
             </article>
@@ -399,16 +406,16 @@
               "
             >
               <li>
-                Group project focused on solving real problems in emergency
-                response in Sri Lanka.
+                Group project focused on improving ambulance dispatch and
+                operational visibility for hospitals in Sri Lanka.
               </li>
               <li>
-                Scope: live tracking, provider filtering, incident reporting,
-                and priority triage.
+                Scope: live tracking, hospital assignment, status monitoring,
+                and role-based permissions.
               </li>
               <li>
-                Deliverables: working prototype, documentation, and evaluation
-                report.
+                Deliverables: functional prototype, documentation, and an
+                evaluation assessing operational benefits.
               </li>
             </ul>
           </div>
@@ -431,8 +438,8 @@
               <strong>MediGo</strong>
             </div>
             <p class="note">
-              On‑demand ambulance app. Built as a Year 2 group project (BSc Hons
-              CS), University of Westminster.
+              A hospital-led ambulance coordination platform. Built as a Year 2
+              group project (BSc Hons CS), University of Westminster.
             </p>
             <div class="footer-social">
               <a
@@ -467,7 +474,7 @@
               <li><a href="index.html#features">Features</a></li>
               <li><a href="index.html#how">How it works</a></li>
               <li><a href="index.html#screens">Screens</a></li>
-              <li><a href="index.html#download">Download</a></li>
+              <li><a href="index.html#download">Mobile App Preview</a></li>
             </ul>
           </div>
 
