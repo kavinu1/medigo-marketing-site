@@ -789,14 +789,30 @@ svg.flip {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 640px) {
   .team-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
   .member-card {
-    grid-template-columns: 84px 1fr;
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .member-card .avatar {
+    order: 1;
+    margin: 14px auto 0;
+  }
+  .member-card .member-body {
+    order: 2;
+  }
+  .member-card .social {
+    justify-content: center;
+  }
+  .tags {
+    justify-content: center;
   }
 }
+
 .member-card {
   display: grid;
   grid-template-columns: 140px 1fr;
