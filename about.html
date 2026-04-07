@@ -1,539 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us — MediGo</title>
-    <meta
-      name="description"
-      content="Meet the team behind MediGo — a hospital–ambulance coordination platform developed as a second-year BSc (Hons) Computer Science group project at the University of Westminster."
-    />
-    <link rel="icon" href="./assets/images/ambulance-icon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- SVG SPRITE -->
-    <svg class="svg-sprite" aria-hidden="true">
-      <symbol id="i-ambulance" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M3 6h9v7h7V9l-2.5-3H14V4H3v2Zm14 2h1.5l1.5 2h-3V8ZM3 19h2a2 2 0 1 0 4 0h6a2 2 0 1 0 4 0h2v-4H3v4Zm6-2a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7 7h2v2h2v2H9v2H7v-2H5V9h2V7Z"
-        />
-      </symbol>
-      <symbol id="i-menu" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"
-        />
-      </symbol>
-      <symbol id="i-arrow" viewBox="0 0 24 24">
-        <path fill="currentColor" d="m9 6l6 6l-6 6V6Z" />
-      </symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4l-8 5L4 8V6l8 5l8-5v2Z"
-        />
-      </symbol>
-      <symbol id="i-linkedin" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M6.94 7.5A1.94 1.94 0 1 1 5 5.56A1.94 1.94 0 0 1 6.94 7.5ZM4.5 9h5v11h-5Zm7.5 0h4.8v1.5h.07a5.27 5.27 0 0 1 4.66-2.56c4.99 0 5.9 3.28 5.9 7.53V20h-5v-4.7c0-1.12-.02-2.56-1.56-2.56c-1.56 0-1.8 1.22-1.8 2.48V20h-5Z"
-        />
-      </symbol>
-      <symbol id="i-github" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.61-3.37-1.19-3.37-1.19c-.45-1.14-1.1-1.45-1.1-1.45c-.9-.62.07-.61.07-.61c1 .07 1.52 1.03 1.52 1.03c.89 1.52 2.34 1.08 2.91.83c.09-.65.35-1.08.63-1.33c-2.22-.25-4.55-1.11-4.55-4.95c0-1.09.39-1.98 1.03-2.68c-.1-.25-.45-1.27.1-2.65c0 0 .84-.27 2.75 1.02c.8-.22 1.65-.33 2.5-.33s1.7.11 2.5.33c1.9-1.3 2.74-1.02 2.74-1.02c.55 1.38.2 2.4.1 2.65c.64.7 1.03 1.59 1.03 2.68c0 3.85-2.34 4.7-4.57 4.95c.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
-        />
-      </symbol>
-      <symbol id="i-sun" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M6.76 4.84L4.96 3.05l1.41-1.41l1.79 1.8L6.76 4.84ZM1 13h3v-2H1v2Zm10 10h2v-3h-2v3Zm9-10v-2h-3v2h3Zm-2.36-6.95l1.41-1.41l1.8 1.79l-1.41 1.41l-1.8-1.79ZM12 6a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm-1-5h2v3h-2V1ZM4.22 17.78l-1.8 1.79l1.41 1.41l1.79-1.8l-1.4-1.4ZM18.78 17.78l1.79 1.8l1.41-1.41l-1.8-1.79l-1.4 1.4Z"
-        />
-      </symbol>
-      <symbol id="i-moon" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
-        />
-      </symbol>
-    </svg>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - MediGo</title>
+  <meta name="description"
+    content="Meet the team behind MediGo — a hospital–ambulance coordination platform developed as a second-year BSc (Hons) Computer Science group project at the University of Westminster." />
+  <link rel="icon" href="./assets/images/ambulance-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
 
-    <header>
-      <a class="logo" href="index.html">
-        <img
-          src="./assets/images/ambulance-logo.png"
-          alt="ambulance-logo"
-          class="logo-img"
-        />
-        <span>MediGo</span>
-      </a>
-      <nav id="nav" aria-label="Primary">
-        <a href="index.html#overview">Overview</a>
-        <a href="index.html#problems">Problems</a>
-        <a href="index.html#features">Features</a>
-        <a href="index.html#how">How it works</a>
-        <a href="index.html#screens">Screens</a>
-        <a href="index.html#benefits">Benefits</a>
-        <a href="index.html#coverage">Coverage</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="about.html" aria-current="page">About</a>
-      </nav>
-      <div class="actions">
-        <button
-          class="btn btn-outline theme-toggle"
-          type="button"
-          aria-label="Switch to dark mode"
-        >
-          <svg width="18" height="18" class="sun"><use href="#i-sun" /></svg>
-          <svg width="18" height="18" class="moon"><use href="#i-moon" /></svg>
-        </button>
-        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-          <svg width="20" height="20"><use href="#i-menu" /></svg>
-        </button>
-      </div>
-    </header>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-    <main id="main">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <div>
-            <span class="eyebrow">About the Project</span>
-            <h1>Meet the Team</h1>
-            <p>
-              A second-year BSc (Hons) Computer Science group project at the
-              University of Westminster. MediGo is designed to support hospitals
-              with real-time ambulance coordination, faster dispatch decisions,
-              and secure communication between operations staff and drivers.
-            </p>
-            <div class="kpis">
-              <div class="tile">
-                <div class="num">6</div>
-                <div class="label">Team members</div>
-              </div>
-              <div class="tile">
-                <div class="num">Year 2</div>
-                <div class="label">BSc (Hons) CS</div>
-              </div>
-              <div class="tile">
-                <div class="num">UoW</div>
-                <div class="label">University</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- SVG SPRITE -->
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-ambulance" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M3 6h9v7h7V9l-2.5-3H14V4H3v2Zm14 2h1.5l1.5 2h-3V8ZM3 19h2a2 2 0 1 0 4 0h6a2 2 0 1 0 4 0h2v-4H3v4Zm6-2a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7 7h2v2h2v2H9v2H7v-2H5V9h2V7Z" />
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7 2v11h3v9l7-14h-4l4-6H7Z" />
+    </symbol>
+    <symbol id="i-gps" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M11 2v2.062A8.001 8.001 0 0 0 4.062 11H2v2h2.062A8.001 8.001 0 0 0 11 19.938V22h2v-2.062A8.001 8.001 0 0 0 19.938 13H22v-2h-2.062A8.001 8.001 0 0 0 13 4.062V2h-2Zm1 6a4 4 0 1 1 0 8a4 4 0 0 1 0-8Z" />
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2l8 4v6c0 5-3.6 9.7-8 10c-4.4-.3-8-5-8-10V6l8-4Z" />
+    </symbol>
+    <symbol id="i-file" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 2l4 4h-4V4Z" />
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="currentColor" d="m9 6l6 6l-6 6V6Z" />
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4l-8 5L4 8V6l8 5l8-5v2Z" />
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M6.94 7.5A1.94 1.94 0 1 1 5 5.56A1.94 1.94 0 0 1 6.94 7.5ZM4.5 9h5v11h-5Zm7.5 0h4.8v1.5h.07a5.27 5.27 0 0 1 4.66-2.56c4.99 0 5.9 3.28 5.9 7.53V20h-5v-4.7c0-1.12-.02-2.56-1.56-2.56c-1.56 0-1.8 1.22-1.8 2.48V20h-5Z" />
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.61-3.37-1.19-3.37-1.19c-.45-1.14-1.1-1.45-1.1-1.45c-.9-.62.07-.61.07-.61c1 .07 1.52 1.03 1.52 1.03c.89 1.52 2.34 1.08 2.91.83c.09-.65.35-1.08.63-1.33c-2.22-.25-4.55-1.11-4.55-4.95c0-1.09.39-1.98 1.03-2.68c-.1-.25-.45-1.27.1-2.65c0 0 .84-.27 2.75 1.02c.8-.22 1.65-.33 2.5-.33s1.7.11 2.5.33c1.9-1.3 2.74-1.02 2.74-1.02c.55 1.38.2 2.4.1 2.65c.64.7 1.03 1.59 1.03 2.68c0 3.85-2.34 4.7-4.57 4.95c.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M6.76 4.84L4.96 3.05l1.41-1.41l1.79 1.8L6.76 4.84ZM1 13h3v-2H1v2Zm10 10h2v-3h-2v3Zm9-10v-2h-3v2h3Zm-2.36-6.95l1.41-1.41l1.8 1.79l-1.41 1.41l-1.8-1.79ZM12 6a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm-1-5h2v3h-2V1ZM4.22 17.78l-1.8 1.79l1.41 1.41l1.79-1.8l-1.4-1.4ZM18.78 17.78l1.79 1.8l1.41-1.41l-1.8-1.79l-1.4 1.4Z" />
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z" />
+    </symbol>
+  </svg>
 
-      <!-- OBJECTIVE -->
-      <section>
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Our Objective</h2>
-            <p>
-              Enable hospitals to coordinate ambulances efficiently and safely.
-            </p>
-          </div>
-          <div class="surface pad-18 reveal">
-            <ul
-              style="
-                margin: 0;
-                padding-left: 18px;
-                display: grid;
-                gap: 8px;
-                font-size: 18px;
-                color: var(--text);
-              "
-            >
-              <li>Real-time task assignment from hospital dispatchers.</li>
-              <li>
-                Secure location tracking and status reporting during trips.
-              </li>
-              <li>
-                Support operational awareness without transmitting patient
-                records.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <header>
+    <a class="logo" href="index.html">
+      <img id="header-logo-light" src="./assets/images/ambulance-logo1.png" alt="ambulance-logo"
+        class="logo-img logo-light" />
+      <img id="header-logo-dark" src="./assets/images/ambulance-logo2.png" alt="ambulance-logo"
+        class="logo-img logo-dark" />
+    </a>
+    <nav id="nav" aria-label="Primary">
+      <a href="index.html#overview">Overview</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="about.html" aria-current="page">About</a>
+    </nav>
+    <div class="actions">
+      <button class="btn btn-outline theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg width="18" height="18" class="sun">
+          <use href="#i-sun" />
+        </svg>
+        <svg width="18" height="18" class="moon">
+          <use href="#i-moon" />
+        </svg>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+        <svg width="20" height="20">
+          <use href="#i-menu" />
+        </svg>
+      </button>
+    </div>
+  </header>
 
-      <!-- TEAM -->
-      <section id="team">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Our Team</h2>
-            <p>
-              6 members collaborating across backend systems, mobile
-              engineering, frontend UI, data, QA, and DevOps.
-            </p>
-          </div>
-
-          <div class="team-grid">
-            <!-- Members retained as placeholders -->
-            <article class="member-card reveal">
-              <div class="avatar" aria-hidden="true">M1</div>
-              <div class="member-body">
-                <h3 class="member-name">Member One</h3>
-                <div class="role">Team Lead • Backend</div>
-                <p class="bio">
-                  Designs system architecture, backend services, and deployment
-                  pipelines for coordination between hospitals and ambulance
-                  drivers.
-                </p>
-                <div class="tags">
-                  <span class="tag">Node.js</span
-                  ><span class="tag">Postgres</span
-                  ><span class="tag">Auth</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member1@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="avatar">M2</div>
-              <div class="member-body">
-                <h3 class="member-name">Member Two</h3>
-                <div class="role">Mobile (Android)</div>
-                <p class="bio">
-                  Implements driver-side workflows including task assignment,
-                  navigation, and status updates during ambulance transfers.
-                </p>
-                <div class="tags">
-                  <span class="tag">Kotlin</span><span class="tag">Maps</span
-                  ><span class="tag">Push</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member2@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="avatar">M3</div>
-              <div class="member-body">
-                <h3 class="member-name">Member Three</h3>
-                <div class="role">Frontend (Web)</div>
-                <p class="bio">
-                  Builds the hospital dashboard interface, improves usability,
-                  and maintains responsive design for operators.
-                </p>
-                <div class="tags">
-                  <span class="tag">HTML</span><span class="tag">CSS</span
-                  ><span class="tag">JS</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member3@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="avatar">M4</div>
-              <div class="member-body">
-                <h3 class="member-name">Member Four</h3>
-                <div class="role">UX/UI Design</div>
-                <p class="bio">
-                  Conducts user research, maps operator requirements, and
-                  delivers prototypes for clear dispatch and monitoring
-                  workflows.
-                </p>
-                <div class="tags">
-                  <span class="tag">Figma</span
-                  ><span class="tag">Prototyping</span
-                  ><span class="tag">Design Sys</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member4@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="avatar">M5</div>
-              <div class="member-body">
-                <h3 class="member-name">Member Five</h3>
-                <div class="role">Data & Integrations</div>
-                <p class="bio">
-                  Works on data models for transfer logging, analytics
-                  dashboards, and integration paths for hospital systems.
-                </p>
-                <div class="tags">
-                  <span class="tag">ETL</span><span class="tag">APIs</span
-                  ><span class="tag">Analytics</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member5@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="member-card reveal">
-              <div class="avatar">M6</div>
-              <div class="member-body">
-                <h3 class="member-name">Member Six</h3>
-                <div class="role">QA & DevOps</div>
-                <p class="bio">
-                  Oversees testing strategy, CI pipelines, release management,
-                  and reliability monitoring across development.
-                </p>
-                <div class="tags">
-                  <span class="tag">Testing</span><span class="tag">CI/CD</span
-                  ><span class="tag">Monitoring</span>
-                </div>
-                <div class="social">
-                  <a
-                    href="mailto:member6@example.com"
-                    class="btn btn-outline sm"
-                  >
-                    <svg width="16" height="16"><use href="#i-mail" /></svg
-                    >Email
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-linkedin" /></svg
-                    >LinkedIn
-                  </a>
-                  <a href="#" class="btn btn-outline sm">
-                    <svg width="16" height="16"><use href="#i-github" /></svg
-                    >GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROGRAM INFO -->
-      <section>
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Programme & University</h2>
-            <p>
-              University of Westminster • BSc (Hons) Computer Science • Year 2
-            </p>
-          </div>
-          <div class="surface pad-18 reveal">
-            <ul
-              class="note"
-              style="
-                margin: 0;
-                padding-left: 18px;
-                display: grid;
-                gap: 6px;
-                color: var(--text);
-              "
-            >
-              <li>
-                Group project focused on improving ambulance dispatch and
-                operational visibility for hospitals in Sri Lanka.
-              </li>
-              <li>
-                Scope: live tracking, hospital assignment, status monitoring,
-                and role-based permissions.
-              </li>
-              <li>
-                Deliverables: functional prototype, documentation, and an
-                evaluation assessing operational benefits.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ENHANCED FOOTER -->
-    <footer>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
       <div class="container">
-        <div class="footer-grid">
-          <!-- Brand + emergency -->
-          <div class="footer-brand">
-            <div class="brand-row">
-              <img
-                src="./assets/images/ambulance-logo.png"
-                alt="ambulance-logo"
-                class="logo-img"
-              />
-              <strong>MediGo</strong>
+        <div>
+          <span class="eyebrow">About the Project</span>
+          <h1>Meet the Team</h1>
+          <p>
+            A second-year BSc (Hons) Computer Science group project at the
+            University of Westminster. MediGo is designed to support hospitals
+            with real-time ambulance coordination, faster dispatch decisions,
+            and secure communication between operations staff and drivers.
+          </p>
+          <div class="kpis">
+            <div class="tile">
+              <div class="num">6</div>
+              <div class="label">Team members</div>
             </div>
-            <p class="note">
-              A hospital-led ambulance coordination platform. Built as a Year 2
-              group project (BSc Hons CS), University of Westminster.
-            </p>
-            <div class="footer-social">
-              <a
-                class="btn btn-outline sm"
-                href="#"
-                target="_blank"
-                rel="noopener"
-                >LinkedIn</a
-              >
-              <a
-                class="btn btn-outline sm"
-                href="#"
-                target="_blank"
-                rel="noopener"
-                >GitHub</a
-              >
-              <a
-                class="btn btn-outline sm"
-                href="#"
-                target="_blank"
-                rel="noopener"
-                >Website</a
-              >
+            <div class="tile">
+              <div class="num">Year 2</div>
+              <div class="label">BSc (Hons) CS</div>
+            </div>
+            <div class="tile">
+              <div class="num">UoW</div>
+              <div class="label">University</div>
             </div>
           </div>
-
-          <!-- Product -->
-          <div class="footer-col">
-            <h4>Product</h4>
-            <ul class="footer-links">
-              <li><a href="index.html#overview">Overview</a></li>
-              <li><a href="index.html#features">Features</a></li>
-              <li><a href="index.html#how">How it works</a></li>
-              <li><a href="index.html#screens">Screens</a></li>
-              <li><a href="index.html#download">Mobile App Preview</a></li>
-            </ul>
-          </div>
-
-          <!-- Resources -->
-          <div class="footer-col">
-            <h4>Resources</h4>
-            <ul class="footer-links">
-              <li><a href="index.html#faq">Help Center</a></li>
-              <li>
-                <a href="#" target="_blank" rel="noopener"
-                  >Project report (PDF)</a
-                >
-              </li>
-              <li><a href="#" target="_blank" rel="noopener">Pitch deck</a></li>
-              <li>
-                <a href="#" target="_blank" rel="noopener">GitHub repository</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Company -->
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-              <li><a href="index.html#contact">Become a partner</a></li>
-              <li>
-                <a
-                  href="https://www.westminster.ac.uk/"
-                  target="_blank"
-                  rel="noopener"
-                  >University of Westminster</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Legal -->
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <ul class="footer-links">
-              <li>
-                <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noopener">Terms of Use</a>
-              </li>
-              <li><a href="#" target="_blank" rel="noopener">Cookies</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div>© <span id="year"></span> MediGo. All rights reserved.</div>
-          <div>Made with ♥ by the MediGo Team.</div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <button class="to-top" aria-label="Back to top" title="Back to top">
-      <svg width="18" height="18" class="flip"><use href="#i-arrow" /></svg>
-    </button>
-  </body>
+    <!-- OBJECTIVE -->
+    <section class="section-professional">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Our Mission</span>
+          <h2>Our Objective</h2>
+          <p class="section-subtitle">
+            Enable hospitals to coordinate ambulances efficiently and safely.
+          </p>
+        </div>
+        <div class="value-grid reveal">
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="28" height="28">
+                <use href="#i-bolt" />
+              </svg>
+            </div>
+            <div class="value-content">
+              <h4>Real-time Assignment</h4>
+              <p>Task assignment from hospital dispatchers with instant notification</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="28" height="28">
+                <use href="#i-gps" />
+              </svg>
+            </div>
+            <div class="value-content">
+              <h4>Secure Tracking</h4>
+              <p>Location tracking and status reporting during trips</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <svg width="28" height="28">
+                <use href="#i-file" />
+              </svg>
+            </div>
+            <div class="value-content">
+              <h4>Operational Awareness</h4>
+              <p>Support visibility without transmitting patient records</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Our People</span>
+          <h2>Our Team</h2>
+          <p class="section-subtitle">
+            6 members collaborating across full-stack development, mobile
+            engineering, data, QA, and DevOps.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/anupa.png" alt="Anupa Vitharana" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-ambulance" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Anupa Vitharana</h3>
+              <div class="role">
+                Team Lead • Full Stack Developer
+              </div>
+              <p class="bio">
+                Contributed to backend services and developed core user
+                interfaces for the ambulance driver mobile application and assisted on
+                google maps API integration.
+              </p>
+              <div class="tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Mobile UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/thashmika.png" alt="Thashmika Rathnayake" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-gps" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Thashmika Rathnayake</h3>
+              <div class="role">Full Stack Developer</div>
+              <p class="bio">
+                Worked on backend logic and implemented responsive components
+                for the hospital web portal dashboard.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/thavinsa.png" alt="Thavinsa Kariapperuma" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-bolt" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Thavinsa Kariapperuma</h3>
+              <div class="role">Full Stack Developer</div>
+              <p class="bio">
+                Developed backend features and enhanced usability of the
+                hospital web portal through clean and accessible UI design.
+              </p>
+              <div class="tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">UI Design</span>
+                <span class="tag">Accessibility</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/dulen.jpg" alt="Dulen Gunarathna" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-file" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Dulen Gunarathna</h3>
+              <div class="role">Full Stack Developer</div>
+              <p class="bio">
+                Supported backend development while designing and implementing
+                interactive workflows for the web-based hospital dashboard.
+              </p>
+              <div class="tags">
+                <span class="tag">UX</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Web UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/kavinu.png" alt="Kavinu Vanniarachchi" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-gps" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Kavinu Vanniarachchi</h3>
+              <div class="role">Full Stack Developer</div>
+              <p class="bio">
+                Contributed to backend integrations and focused on
+                implementing driver-side workflows within the mobile
+                application.
+              </p>
+              <div class="tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Maps</span>
+                <span class="tag">Mobile UX</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-avatar-wrap">
+              <img src="./assets/profileImages/sahan.png" alt="Sahan Baddegama" class="avatar" />
+              <div class="member-icon">
+                <svg width="18" height="18">
+                  <use href="#i-shield" />
+                </svg>
+              </div>
+            </div>
+            <div class="member-body">
+              <h3 class="member-name">Sahan Baddegama</h3>
+              <div class="role">Full Stack Developer & QA</div>
+              <p class="bio">
+                Assisted with backend development, built driver app UI
+                components, and supported testing and system reliability.
+              </p>
+              <div class="tags">
+                <span class="tag">Testing</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">CI/CD</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM INFO -->
+    <section class="section-professional alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Academic Context</span>
+          <h2>Programme & University</h2>
+          <p class="section-subtitle">
+            University of Westminster • BSc (Hons) Computer Science • Year 2
+          </p>
+        </div>
+        <div class="problem-grid reveal">
+          <div class="problem-item">
+            <span class="problem-number">01</span>
+            <h4>Project Focus</h4>
+            <p>Improving ambulance dispatch and operational visibility for hospitals in Sri Lanka</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-number">02</span>
+            <h4>Project Scope</h4>
+            <p>Live tracking, hospital assignment, status monitoring, and role-based permissions</p>
+          </div>
+          <div class="problem-item">
+            <span class="problem-number">03</span>
+            <h4>Deliverables</h4>
+            <p>Functional prototype, documentation, and evaluation assessing operational benefits</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ENHANCED FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand + emergency -->
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img id="footer-logo-light" src="./assets/images/ambulance-logo1.png" alt="ambulance-logo"
+              class="logo-img logo-light" />
+            <img id="footer-logo-dark" src="./assets/images/ambulance-logo2.png" alt="ambulance-logo"
+              class="logo-img logo-dark" />
+          </div>
+          <p class="note">
+            A hospital-led ambulance coordination platform. Built as a Year 2
+            group project (BSc Hons CS), University of Westminster.
+          </p>
+          <div class="footer-social">
+            <a class="btn btn-outline sm" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-outline sm" href="https://github.com/SDGP-03/MediGo" target="_blank"
+              rel="noopener">GitHub</a>
+            <a class="btn btn-outline sm" href="#" target="_blank" rel="noopener">Website</a>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="index.html#screens">Screens</a></li>
+            <li><a href="index.html#download">Mobile App Preview</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#faq">Help Center</a></li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">Project report (PDF)</a>
+            </li>
+            <li><a href="#" target="_blank" rel="noopener">Pitch deck</a></li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">GitHub repository</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#contact">Become a partner</a></li>
+            <li>
+              <a href="https://www.westminster.ac.uk/" target="_blank" rel="noopener">University of Westminster</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">Terms of Use</a>
+            </li>
+            <li><a href="#" target="_blank" rel="noopener">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> MediGo. All rights reserved.</div>
+        <div>Made with ♥ by the MediGo Team.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" class="flip">
+      <use href="#i-arrow" />
+    </svg>
+  </button>
+</body>
+
 </html>

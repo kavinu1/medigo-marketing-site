@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MediGo Driver App Download</title>
+    <meta
+      name="description"
+      content="Download the MediGo driver app for ambulance drivers."
+    />
+    <meta name="theme-color" content="#E53935" />
+    <link rel="icon" href="./assets/images/ambulance-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="driver-app.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"
+        />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path fill="currentColor" d="m9 6l6 6l-6 6V6Z" />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M6.76 4.84L4.96 3.05l1.41-1.41l1.79 1.8L6.76 4.84ZM1 13h3v-2H1v2Zm10 10h2v-3h-2v3Zm9-10v-2h-3v2h3Zm-2.36-6.95l1.41-1.41l1.8 1.79l-1.41 1.41l-1.8-1.79ZM12 6a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm-1-5h2v3h-2V1ZM4.22 17.78l-1.8 1.79l1.41 1.41l1.79-1.8l-1.4-1.4ZM18.78 17.78l1.79 1.8l1.41-1.41l-1.8-1.79l-1.4 1.4Z"
+        />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
+        />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8s8 3.6 8 8s-3.6 8-8 8zm.5-13H11v6l5.2 3.2l.8-1.3l-4.5-2.7V7z"
+        />
+      </symbol>
+      <symbol id="i-android" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M17.6 9.48c-.44 0-.8-.36-.8-.8s.36-.8.8-.8s.8.36.8.8s-.36.8-.8.8zm-11.2 0c-.44 0-.8-.36-.8-.8s.36-.8.8-.8s.8.36.8.8s-.36.8-.8.8zM12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8s8-3.58 8-8s-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6s6 2.69 6 6s-2.69 6-6 6z"
+        />
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.787 3.9t-2.138 3.175q-1.35 1.35-3.175 2.138T12 22zm-1-2.05q-2.525-.3-4.287-2.113T4.15 13.5h2.375q.275 1.45 1.25 2.6t2.3 1.8q.475-.5.85-1.063t.675-1.187H8.575q-.2 0-.337-.137T8.1 12.4v-1.1q0-.175.125-.3t.325-.125H11.5q0-.325-.125-.625t-.225-.625L9.6 8.075Q9.5 7.975 9.5 7.825t.125-.275l.4-.4q.1-.1.25-.1t.25.1l1.8 1.8q.125.125.213.263T11.65 9.6h1.15q.2 0 .338-.137t.137-.313V7.275q0-.2-.137-.337t-.313-.138q-.25 0-.413.163T12.25 7.4V7.5q0 .175-.125.3T11.8 7.925h-.55Q11.075 7.925 11 7.8t-.075-.25v-.3q0-.2-.137-.337T10.45 6.775h-.225q-.15 0-.25-.1t-.1-.225V5.5q0-.15.1-.25t.225-.1h.525q.2 0 .313.138t.112.337v.3q0 .125.075.25T11.45 6.3h.6q.25 0 .425-.162t.175-.413q0-.375-.275-.65T11.725 4.8q-.25 0-.412.163T11.15 5.375q0 .175-.125.3T10.7 5.8h-.125q-.15 0-.25-.1t-.1-.225q0-.225.163-.388T10.775 4.925q.1 0 .163-.063t.062-.162q0-.4-.287-.675T9.925 4.025q-.45 0-.737.288T8.9 5.05q0 .125-.075.25T8.65 5.425H7.55q-.175 0-.3.125T7.125 5.85V6.7q0 .175.125.3t.3.125h.4q.175 0 .3.125T8.375 7.55v.225q0 .175-.125.3t-.3.125H7.425q-.175 0-.312.113t-.138.287q0 .25.163.413t.387.162h.725q.175 0 .3.125t.125.3v1h1v1h-1.5q-.175 0-.3.125t-.125.3V13.5h-1.05q-.15 0-.25-.1t-.1-.225V12.05q0-.15.113-.25t.287-.1H7.8q.2 0 .338-.137T8.275 11.625V10.7q0-.15.113-.25t.287-.1h1.375q.175 0 .313-.112t.137-.288q0-.225-.162-.387T15.075 9.4H13.85q-.175 0-.3-.112t-.125-.288v-.4q0-.175.112-.3t.288-.125h.725q.2 0 .35-.137t.15-.338V6.9q0-.2-.163-.35T14.525 6.4h-.35q-.175 0-.312.125t-.138.3v1h-1.55q-.175 0-.3-.125T11.75 7.4V5.7h1.05q.175 0 .288-.125T13.2 5.275q0-.225-.112-.35T12.8 4.8H11.7q-.175 0-.287.125T11.275 5.25q0 .15-.112.25t-.238.1H9.9q-.175 0-.3-.125t-.125-.3V4.925q0-.15.125-.25t.3-.1h.225q.225 0 .4-.188t.175-.412q0-.4-.3-.65T9.775 3.075h-.3q-.175 0-.3.125t-.125.3V3.9h-.85q-.175 0-.287.125T7.775 4.3q0 .15-.112.25t-.263.1H6.775q-.2 0-.338.138t-.137.337q0 .25.175.425T6.9 5.725q.2 0 .338.138t.137.337v.3q0 .15.113.25t.287.1h.475q.175 0 .3.125t.125.3v1.225q0 .175-.125.3t-.3.125h-.175q-.15 0-.25.1t-.1.225v.725q0 .2.138.338t.337.137h1.5q.15 0 .25.1t.1.225V12.9q0 .15.113.25t.287.1H11.2q.2 0 .338.138t.137.312v.2q0 .25.163.413T12.25 14.475H14.1q.175 0 .288.125t.112.3V15.7q0 .175.125.3t.3.125H16q.225 0 .425.163t.2.462v1h.7q.175 0 .3.125t.125.3V18.575a2.536 2.536 0 0 1 .15 1.05q-.025.3-.238.513T16.7 20.35h-1.525q-.175 0-.3-.125t-.125-.3V19q0-.175-.125-.3t-.3-.125H12.9q-.175 0-.3-.125t-.125-.3V17.3q0-.175-.125-.3t-.3-.125H10.5q-.175 0-.3-.125t-.125-.3V15.3q0-.225-.163-.388t-.387-.162h-.425q-.175 0-.3-.125t-.125-.3V13.5h-.475q-.15 0-.25.1t-.1.225v2.8q0 .15-.1.25t-.225.1h-.975q-.175 0-.3-.125T7.125 16.6v-1.25q0-.325-.237-.562t-.563-.238h-.8q-.15 0-.25-.1t-.1-.225v-.325q0-.15.113-.25t.287-.1H6.1q.175 0 .3-.125t.125-.3v-1.05q0-.325-.238-.562t-.562-.238H4.675q-.225 0-.425-.137t-.275-.413q-.075-.25-.3-.4t-.5-.15H2.9V12q.4-.45.613-1.05T3.725 9.7V8.5q0-.25.163-.412T4.3 7.925h1.6q.175 0 .3-.125t.125-.3V6.5q0-.175.125-.3t.3-.125h.4q.175 0 .313-.112T7.6 5.675q0-.225.163-.388T8.15 5.125H9.7q.175 0 .3-.125t.125-.3V4.15q0-.2.138-.337T10.6 3.675h1.6q.225 0 .413.138T12.925 4.225l.8 1.8q.1.275.337.425t.538.15h1.225q.2 0 .338.138t.137.337v.3q0 .15.125.25t.3.1H18.425q.225 0 .425.163t.175.462q0 .425.338.713T20.075 9.1h.45q.225 0 .425-.15t.3-.4q.125-.3.4-.425T16.7 5.925h.2q.2 0 .35-.112T17.475 5.5q.075-.275.3-.437t.5-.163h.775q.275 0 .45-.2t.175-.475V4q0-.125.088-.225T20 3.65q.35-.1 1-.225.5-.075.8.175q.15.125.2.313T22 4.3V12z"
+        />
+      </symbol>
+      <symbol id="i-info" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M11 9h2V7h-2v2zm0 8h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z"
+        />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2z"
+        />
+      </symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"
+        />
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+        />
+      </symbol>
+      <symbol id="i-box" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M21 16.5c0 .38-.21.71-.53.88l-7.97 4.44c-.31.17-.66.17-.97 0l-7.97-4.44c-.32-.17-.53-.5-.53-.88v-9c0-.38.21-.71.53-.88l7.97-4.44c.31-.17.66.17.97 0l7.97 4.44c.32.17.53.5.53.88v9zM12 4.15L6.04 7.47L12 10.79l5.96-3.32L12 4.15z"
+        />
+      </symbol>
+    </svg>
+
+    <header>
+      <a class="logo" href="index.html">
+        <img
+          id="header-logo-light"
+          src="./assets/images/ambulance-logo1.png"
+          alt="ambulance-logo"
+          class="logo-img logo-light"
+        />
+        <img
+          id="header-logo-dark"
+          src="./assets/images/ambulance-logo2.png"
+          alt="ambulance-logo"
+          class="logo-img logo-dark"
+        />
+      </a>
+      <nav id="nav" aria-label="Primary">
+        <a href="index.html#overview">Overview</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#download" aria-current="page">Driver App</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="actions">
+        <button
+          class="btn btn-outline theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+        >
+          <svg width="18" height="18" class="sun">
+            <use href="#i-sun" />
+          </svg>
+          <svg width="18" height="18" class="moon">
+            <use href="#i-moon" />
+          </svg>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+          <svg width="20" height="20">
+            <use href="#i-menu" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="driver-page">
+      <div class="container">
+        <section
+          class="driver-download-card"
+          aria-labelledby="driver-download-title"
+        >
+          <div class="store-layout">
+            <section
+              class="store-card store-hero"
+              aria-labelledby="driver-download-title"
+            >
+              <img
+                class="store-icon"
+                src="./assets/images/ambulance-icon.png"
+                alt="MediGo app icon"
+                loading="lazy"
+              />
+              <div>
+                <h1 id="driver-download-title" class="store-title">
+                  MediGo Driver App
+                </h1>
+                <p class="store-dev">MediGo Team • Driver application</p>
+                <ul class="store-badges" aria-label="App highlights">
+                  <li class="store-badge">v6 (latest)</li>
+                  <li class="store-badge">Enhanced navigation</li>
+                  <li class="store-badge">Android 8.0+</li>
+                  <li class="store-badge">Sinhala (v2)</li>
+                  <li class="store-badge">Tamil (v4)</li>
+                </ul>
+                <p class="store-summary">
+                  Receive dispatch assignments, navigate to pickup locations,
+                  and share trip status with hospitals in real time.
+                </p>
+                <div class="store-actions">
+                  <a
+                    class="btn btn-primary btn-download"
+                    href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V6%2Fapp-release.apk?alt=media&token=dbbe7894-d335-499d-9057-982be9e1809c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      class="android-icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M7.4 4.2L6 1.8l.8-.5l1.4 2.4A8.8 8.8 0 0 1 12 3c1.3 0 2.6.3 3.8.7l1.4-2.4l.8.5l-1.4 2.4A8.9 8.9 0 0 1 21 11H3a8.9 8.9 0 0 1 4.4-6.8ZM9 8a.8.8 0 1 0 0-1.6A.8.8 0 0 0 9 8Zm6 0a.8.8 0 1 0 0-1.6A.8.8 0 0 0 15 8ZM4 12h2v6.5a1.5 1.5 0 0 0 3 0V12h1v8.5a1.5 1.5 0 0 0 3 0V12h1v6.5a1.5 1.5 0 0 0 3 0V12h2v6.5a3.5 3.5 0 0 1-7 0v-2.1a3.5 3.5 0 0 1-7 0V12Z"
+                      />
+                    </svg>
+                    Download v6 APK
+                  </a>
+                  <a class="btn btn-outline" href="#versions"
+                    >Version history</a
+                  >
+                  <a class="btn btn-outline" href="index.html#download"
+                    >Back to Access Options</a
+                  >
+                </div>
+                <p class="store-note">
+                  If the download does not start, open this page on an Android
+                  device.
+                </p>
+              </div>
+            </section>
+
+            <section class="store-card" aria-labelledby="screenshots-title">
+              <div class="store-head">
+                <h2 id="screenshots-title">Screenshots</h2>
+              </div>
+              <div class="shots-carousel" data-shots-carousel>
+                <button
+                  class="shots-arrow shots-arrow--left"
+                  type="button"
+                  data-shots-prev
+                  aria-label="Scroll screenshots left"
+                  aria-controls="driver-shots"
+                >
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use href="#i-arrow" />
+                  </svg>
+                </button>
+
+                <div
+                  id="driver-shots"
+                  class="shots-scroller"
+                  role="list"
+                  aria-label="Driver app screenshots"
+                  tabindex="0"
+                >
+                  <figure class="screenshot-card" role="listitem">
+                    <img
+                      src="./assets/driver-application/start-screen.png"
+                      alt="Driver app start screen"
+                      loading="lazy"
+                    />
+                    <figcaption>Start screen</figcaption>
+                  </figure>
+                  <figure class="screenshot-card" role="listitem">
+                    <img
+                      src="./assets/driver-application/signIn-page.png"
+                      alt="Driver app sign in screen"
+                      loading="lazy"
+                    />
+                    <figcaption>Sign in</figcaption>
+                  </figure>
+                  <figure class="screenshot-card" role="listitem">
+                    <img
+                      src="./assets/driver-application/home-page.png"
+                      alt="Driver app home screen"
+                      loading="lazy"
+                    />
+                    <figcaption>Home</figcaption>
+                  </figure>
+                  <figure class="screenshot-card" role="listitem">
+                    <img
+                      src="./assets/driver-application/start-navigation.png"
+                      alt="Driver app start navigation screen"
+                      loading="lazy"
+                    />
+                    <figcaption>Start Navigation</figcaption>
+                  </figure>
+                  <figure class="screenshot-card" role="listitem">
+                    <img
+                      src="./assets/driver-application/navigation-page.png"
+                      alt="Driver app navigation screen"
+                      loading="lazy"
+                    />
+                    <figcaption>Navigation</figcaption>
+                  </figure>
+                </div>
+
+                <button
+                  class="shots-arrow shots-arrow--right"
+                  type="button"
+                  data-shots-next
+                  aria-label="Scroll screenshots right"
+                  aria-controls="driver-shots"
+                >
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use href="#i-arrow" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+
+            <div class="store-two-col">
+              <section class="store-card" aria-labelledby="about-driver-app">
+                <div class="store-head">
+                  <h2 id="about-driver-app">About this app</h2>
+                </div>
+                <p class="store-sub">Reviewed by MediGo Product Team</p>
+                <p class="store-body">
+                  MediGo Driver App helps ambulance drivers receive assignments
+                  fast, navigate to pickup locations, and share live trip status
+                  with hospitals. It is designed for daily field use with a
+                  simple interface and low-friction workflow.
+                </p>
+
+                <h3>Key features</h3>
+                <ul class="store-list">
+                  <li>
+                    <strong>Live assignment alerts:</strong> Get immediate
+                    notifications for new dispatch requests.
+                  </li>
+                  <li>
+                    <strong>Integrated navigation:</strong> Open destination
+                    routes quickly to reduce response delays.
+                  </li>
+                  <li>
+                    <strong>Trip status updates:</strong> Share en route,
+                    arrived, and completed status in real time.
+                  </li>
+                  <li>
+                    <strong>Driver-focused UI:</strong> Large actions and clear
+                    screens for field use.
+                  </li>
+                  <li>
+                    <strong>Release-based updates:</strong> New builds are
+                    published on this page with history.
+                  </li>
+                </ul>
+
+                <h3>Trust and safety</h3>
+                <p class="store-body">
+                  The app is built for operational reliability and clear
+                  communication between drivers and dispatch teams. Drivers can
+                  verify assignment details before confirming actions, helping
+                  reduce route confusion and handling errors.
+                </p>
+              </section>
+
+              <section class="store-card" aria-labelledby="whats-new-title">
+                <div class="store-head">
+                  <h2 id="whats-new-title">What’s new</h2>
+                </div>
+                <p class="updated-at">Last updated date not specified</p>
+                <div class="whats-new" aria-label="Latest release changelog">
+                  <ul>
+                    <li>Enhanced navigation experience.</li>
+                    <li>Improved app flow and usability.</li>
+                    <li>
+                      Includes language variants (Sinhala, English, Tamil).
+                    </li>
+                  </ul>
+                </div>
+                <h3>Quick links</h3>
+                <ul class="store-list">
+                  <li><a href="#versions">View version history</a></li>
+                  <li><a href="about.html">Learn more about MediGo</a></li>
+                </ul>
+              </section>
+            </div>
+
+            <section class="store-card" aria-labelledby="app-info-title">
+              <div class="store-head">
+                <h2 id="app-info-title">Additional information</h2>
+              </div>
+              <ul class="store-meta" aria-label="App details list">
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-info" /></svg>
+                    <span class="label">Latest version</span>
+                  </div>
+                  <span class="value">v6</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-clock" /></svg>
+                    <span class="label">Updated</span>
+                  </div>
+                  <span class="value">March 2026</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-android" /></svg>
+                    <span class="label">Requires Android</span>
+                  </div>
+                  <span class="value">Android 8.0+</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-globe" /></svg>
+                    <span class="label">Languages</span>
+                  </div>
+                  <span class="value">Sinhala, English, Tamil</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-folder" /></svg>
+                    <span class="label">Category</span>
+                  </div>
+                  <span class="value">Medical Operations</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-user" /></svg>
+                    <span class="label">Developer</span>
+                  </div>
+                  <span class="value">MediGo Team</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-award" /></svg>
+                    <span class="label">Content rating</span>
+                  </div>
+                  <span class="value">Everyone (all ages)</span>
+                </li>
+                <li>
+                  <div class="meta-item-head">
+                    <svg class="meta-icon"><use href="#i-box" /></svg>
+                    <span class="label">Package</span>
+                  </div>
+                  <span class="value">Standalone APK</span>
+                </li>
+              </ul>
+            </section>
+
+            <section
+              class="store-card store-versions"
+              id="versions"
+              aria-labelledby="versions-title"
+            >
+              <div class="store-head">
+                <h2 id="versions-title">Version history</h2>
+              </div>
+              <p class="store-sub">
+                Older versions are kept here for testing or rollback.
+              </p>
+              <ul class="release-list" aria-label="App release history">
+                <div class="release-item">
+                  <li>
+                    <h4>v6</h4>
+                    <span class="tag latest">LATEST</span>
+                    <p>Latest build with architectural improvements.</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V6%2Fapp-release.apk?alt=media&token=dbbe7894-d335-499d-9057-982be9e1809c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+
+                <div class="release-item">
+                  <li>
+                    <h4>v5</h4>
+                    <span class="tag stable">STABLE</span>
+                    <p>Previous build with enhanced navigation.</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V5%2Fapp-release.apk?alt=media&token=f9d496f9-10c6-4e24-abe0-0ac0d6ce223b"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+
+                <div class="release-item">
+                  <li>
+                    <h4>v4</h4>
+                    <span class="tag">STABLE</span>
+                    <p>Mobile app with Tamil language.</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V3%20-%20side%20menu%20real%2Fapp-release.apk?alt=media&token=8b266348-d9b0-4ea2-8836-aa9ffd51bd1b"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+
+                <div class="release-item">
+                  <li>
+                    <h4>v3</h4>
+                    <span class="tag">STABLE</span>
+                    <p>Add side menu to all pages.</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V3%20-%20side%20menu%20real%2Fapp-release.apk?alt=media&token=8b266348-d9b0-4ea2-8836-aa9ffd51bd1b"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+
+                <div class="release-item">
+                  <li>
+                    <h4>v2</h4>
+                    <span class="tag">STABLE</span>
+                    <p>Mobile app with Sinhala language.</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/App%20V2%20-%20Sinhala%2Fapp-release.apk?alt=media&token=349684bb-360c-4687-b5e1-8aa8b5900f0d"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+
+                <div class="release-item">
+                  <li>
+                    <h4>v1</h4>
+                    <span class="tag">STABLE</span>
+                    <p>First Release</p>
+                    <a
+                      class="btn btn-outline"
+                      href="https://firebasestorage.googleapis.com/v0/b/medigo-cs03.firebasestorage.app/o/app-release.apk?alt=media&token=9f7e5827-1c1a-4cfd-a7e0-a17cd33dbfe7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  </li>
+                </div>
+                <!-- Add future versions here by copying one .release-item block -->
+              </ul>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand-row">
+              <img
+                id="footer-logo-light"
+                src="./assets/images/ambulance-logo1.png"
+                alt="ambulance-logo"
+                class="logo-img logo-light"
+              />
+              <img
+                id="footer-logo-dark"
+                src="./assets/images/ambulance-logo2.png"
+                alt="ambulance-logo"
+                class="logo-img logo-dark"
+              />
+            </div>
+            <p class="note">
+              A hospital-led ambulance coordination platform. Built as a Year 2
+              group project (BSc Hons CS), University of Westminster.
+            </p>
+            <div class="footer-social">
+              <a
+                class="btn btn-outline sm"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                class="btn btn-outline sm"
+                href="https://github.com/SDGP-03/MediGo"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn-outline sm"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Website</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#overview">Overview</a></li>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#how">How it works</a></li>
+              <li><a href="index.html#screens">Screens</a></li>
+              <li><a href="index.html#download">Mobile App Preview</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#faq">Help Center</a></li>
+              <li>
+                <a href="#" target="_blank" rel="noopener"
+                  >Project report (PDF)</a
+                >
+              </li>
+              <li><a href="#" target="_blank" rel="noopener">Pitch deck</a></li>
+              <li>
+                <a href="#" target="_blank" rel="noopener">GitHub repository</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#contact">Become a partner</a></li>
+              <li>
+                <a
+                  href="https://www.westminster.ac.uk/"
+                  target="_blank"
+                  rel="noopener"
+                  >University of Westminster</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener">Terms of Use</a>
+              </li>
+              <li><a href="#" target="_blank" rel="noopener">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>(c) <span id="year"></span> MediGo. All rights reserved.</div>
+          <div>Made with love by the MediGo Team.</div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" aria-label="Back to top" title="Back to top">
+      <svg width="18" height="18" class="flip">
+        <use href="#i-arrow" />
+      </svg>
+    </button>
+  </body>
+</html>
